@@ -121,18 +121,6 @@ public class Formula extends JFrame{
                 textFieldResult.setText("0");
             }
         });
-        //создание МС кнопки
-        JButton buttonMC = new JButton("MC");
-        buttonMC.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent ev) {
-                Temp4.setText("0");
-                textFieldX.setText("0");
-                textFieldY.setText("0");
-                textFieldZ.setText("0");
-                textFieldResult.setText("0");
-            }
-        });
         //создание М+ кнопки
         JButton buttonM = new JButton("M+");
         buttonM.addActionListener(new ActionListener() {
@@ -152,6 +140,18 @@ public class Formula extends JFrame{
                 sum += temp2;
                 String temp3 = Double.toString(sum);
                 Temp4.setText(temp3);
+            }
+        });
+        //создание МС кнопки
+        JButton buttonMC = new JButton("MC");
+        buttonMC.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ev) {
+                Temp4.setText("0");
+                textFieldX.setText("0");
+                textFieldY.setText("0");
+                textFieldZ.setText("0");
+                textFieldResult.setText("0");
             }
         });
         Box hboxButtons = Box.createHorizontalBox();
